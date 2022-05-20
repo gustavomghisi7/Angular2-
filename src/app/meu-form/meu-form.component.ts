@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MeuFormComponent implements OnInit {
 
+  // Two-way data binding
   nome: string = 'abc';
 
   pessoa: any = {
