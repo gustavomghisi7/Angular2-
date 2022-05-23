@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'data-binding';
+
+  //Lifecycle hooks
   valor: number = 5;
   deletarCiclo: boolean = false;
 
