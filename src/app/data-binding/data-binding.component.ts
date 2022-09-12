@@ -19,11 +19,11 @@ import { Component, OnInit } from '@angular/core';
 export class DataBindingComponent implements OnInit {
 
   // Interpolation
-  url: string = 'http://loiane.com';
+  url: string = 'http://google.com';
   cursoAngular: boolean = true;
   
   getValor(){
-    return 1;
+    return 2;
   }
   getCurtirCurso(){
     return true;
