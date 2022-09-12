@@ -86,11 +86,12 @@
 
     <!--
     <article>
-        <h3>Event Binding</h3>
+        <h2>Event Binding</h2>
 
         <div>
             <button
-                (click)="botaoClicado()" 
+                (click)="botaoClicado()"
+                on-click="botaoClicado()" 
                 class="btn btn-primary"
             >
                 Me clique!
@@ -104,6 +105,7 @@
                 type="text"
                 (keyup)="onKeyUp($event)"
                 (keydown)="salvarValor(campoInput.value)"
+                (blur)="salvarValor(campoInput.value)"
                 #campoInput
             />
 

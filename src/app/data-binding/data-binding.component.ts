@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
   styles: [
     `
       .highlight {
-        background-color: yellow;
+        background-color: red;
         font-weight: bold;
       }
     `
@@ -35,22 +35,23 @@ export class DataBindingComponent implements OnInit {
 
 
   // Event Binding
-  valorAtual: string = '';
-  valorSalvo: string = '';
-
-  isMouseOver: boolean = false;
-
   botaoClicado() {
     alert('Botão clicado!');
   }
+
+  valorAtual: string = '';
 
   onKeyUp(evento: KeyboardEvent){
     this.valorAtual = (<HTMLInputElement>evento.target).value
   }
 
+  valorSalvo: string = '';
+
   salvarValor(valor: any){
     this.valorSalvo = valor;
   }
+
+  isMouseOver: boolean = false;
 
   onMouseOverOut(){
     this.isMouseOver = !this.isMouseOver;
