@@ -1,4 +1,3 @@
-import { MeuFormComponent } from './meu-form/meu-form.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -11,21 +10,22 @@ import { OutputPropertyComponent } from './output-property/output-property.compo
 import { CicloComponent } from './ciclo/ciclo.component';
 import { CliComponent } from './cli/cli.component';
 
+import { MeuFormModule } from './meu-form/meu-form.module';
+
 @NgModule({
   declarations: [
     AppComponent,
     DataBindingComponent,
     InputPropertyComponent,
-    MeuFormComponent,
     OutputPropertyComponent,
     CicloComponent,
     CliComponent
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MeuFormModule
   ],
   providers: [],
   bootstrap: [AppComponent]
