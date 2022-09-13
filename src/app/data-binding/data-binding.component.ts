@@ -59,7 +59,7 @@ export class DataBindingComponent implements OnInit {
 
 
   // Input Properties
-  nomeDoCurso: string = 'Angular';
+  nomeDoCurso: string = 'Angular 2';
 
 
   // Output Properties

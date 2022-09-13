@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class InputPropertyComponent implements OnInit {
 
+  // Declarando o Input property que vem de outro component
   @Input('nome') nomeCurso: string = '';
 
   constructor() { }
