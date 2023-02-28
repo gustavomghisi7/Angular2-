@@ -16,7 +16,7 @@ import { Component, OnInit } from '@angular/core';
     `
   ]
 })
-export class DataBindingComponent implements OnInit {
+export class DataBindingComponent {
 
   // Interpolation
   url: string = 'http://google.com';
@@ -25,6 +25,7 @@ export class DataBindingComponent implements OnInit {
   getValor(){
     return 2;
   }
+  
   getCurtirCurso(){
     return true;
   }
@@ -67,12 +68,6 @@ export class DataBindingComponent implements OnInit {
 
   onMudouValor(evento: any) {
     console.log(evento.novoValor)
-  }
-  
-
-  constructor() { }
-
-  ngOnInit(): void {
   }
 
 }
