@@ -1,4 +1,6 @@
 <section class="property-binding">
+
+    <!--
     <article>
         <h3>Interpolation</h3>
 
@@ -7,7 +9,9 @@
         <p>Resultado de 2 + 1 não é {{ 2 + 1 + getValor() }}</p>
         <p>Curso de Angular e gosto do curso: {{ cursoAngular && getCurtirCurso() }}</p>
     </article>
+    -->
 
+    <!--
     <article>
         <h3>Property Binding</h3>
 
@@ -20,4 +24,52 @@
         <p>Por traz dos panos o Angular faz desta forma</p>
         <img bind-src="urlImagem">
     </article>
+    -->
+
+
+    <article>
+        <h3>Class Binding</h3>
+
+        <div>
+            Selecione uma classe:
+            <select #classe (change)="0">
+                <option value="alert-success">Sucesso</option>
+                <option value="alert-info">Info</option>
+                <option value="alert-warning">Aviso</option>
+                <option value="alert-danger">Perigo</option>
+            </select>
+            <br><br>
+
+            <p>Interpolation usando em classe</p>
+            <div class="alert {{ classe.value }}" role="alert">
+                Texto colorido conforme o combobox.
+            </div>
+
+            <p>Property binding usando classe</p>
+            <div class="alert" role="alert"
+                [class.alert-success]="classe.value === 'alert-success'">
+                Sucesso
+            </div>
+            <div class="alert" role="alert"
+                [class.alert-info]="classe.value === 'alert-info'">
+                Info
+            </div>
+            <div class="alert" role="alert"
+                [class.alert-warning]="classe.value === 'alert-warning'">
+                Aviso
+            </div>
+            <div class="alert" role="alert"
+                [class.alert-danger]="classe.value === 'alert-danger'">
+                Erro
+            </div>
+
+            <h2>Style Binding</h2>
+            <p>Property binding com estilo de classe</p>
+            <div class="alert alert-danger" role="alert"
+                [style.display]="classe.value === 'alert-danger' ? 'block' : 'none' ">
+                Esse texto só aparece em caso de erro.
+            </div>
+        </div>
+    </article>
+
 </section>

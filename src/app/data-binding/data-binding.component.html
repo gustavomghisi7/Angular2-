@@ -1,5 +1,6 @@
 <section class="property-binding">
 
+    <!--
     <article>
         <h3>Interpolation</h3>
 
@@ -8,7 +9,9 @@
         <p>Resultado de 2 + 2 não é {{ 2 + 2 + getValor() }}</p>
         <p>Curso de Angular e gosto do curso: {{ cursoAngular  && getCurtirCurso() }}</p>
     </article>
+    -->
 
+    <!--
     <article>
         <h2>Property Binding</h2>
 
@@ -21,9 +24,8 @@
         <p>Por traz dos panos o Angular faz desta forma</p>
         <img bind-src="urlImagem">
     </article>
+    -->
 
-
-    <!--
     <article>
         <div>
             <div>
@@ -46,19 +48,19 @@
 
                 <p>Property binding usando classe</p>
                 <div class="alert" role="alert"
-                    [class.alert-success]="classe.value == 'alert-success'">
+                    [class.alert-success]="classe.value === 'alert-success'">
                     Sucesso
                 </div>
                 <div class="alert" role="alert"
-                    [class.alert-info]="classe.value == 'alert-info'">
+                    [class.alert-info]="classe.value === 'alert-info'">
                     Info
                 </div>
                 <div class="alert" role="alert" 
-                    [class.alert-warning]="classe.value == 'alert-warning'">
+                    [class.alert-warning]="classe.value === 'alert-warning'">
                     Alerta
                 </div>
                 <div class="alert" role="alert"
-                    [class.alert-danger]="classe.value == 'alert-danger'">
+                    [class.alert-danger]="classe.value === 'alert-danger'">
                     Erro
                 </div>
             </div>
@@ -67,13 +69,12 @@
                 <h2>Style Binding</h2>
                 <p>Property binding com estilo de classe</p>
                 <div class="alert alert-danger" role="alert"
-                    [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'">
+                    [style.display]="classe.value === 'alert-danger' ? 'block' : 'none'">
                     Esse texto somente aparece em caso de erro
                 </div>
             </div>
         </div>
     </article>
-    -->
     
 </section>
 
