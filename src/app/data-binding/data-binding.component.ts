@@ -5,8 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './data-binding.component.html',
   //styleUrls: ['./data-binding.component.css']
 
-  /* Aplicando style inline, segundo style garden é OK você 
-  fazer desse jeito quando for somente um bloco de estilo */
+  /*
+    Aplicando style inline, segundo style garden é OK você 
+    fazer desse jeito quando for somente um bloco de estilo
+  */
+ 
   styles: [
     `
       .highlight {
@@ -25,14 +28,16 @@ export class DataBindingComponent {
   getValor(){
     return 2;
   }
-  
+
   getCurtirCurso(){
     return true;
   }
   
 
+
   // Property Binding
   urlImagem = 'http://lorempixel.com.br/500/400/?1';
+
 
 
   // Event Binding
@@ -59,8 +64,10 @@ export class DataBindingComponent {
   }
 
 
+
   // Input Properties
   nomeDoCurso: string = 'Angular 2';
+
 
 
   // Output Properties
